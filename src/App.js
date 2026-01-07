@@ -20,7 +20,7 @@ function App() {
       <BrowserRouter> 
        <Navbar />
         <Routes>
-          <Route path='/counter' element={<Counter />} />
+          <Route path='/' element={<Counter />} />
           <Route path='/api' element={<Api />} />
         </Routes>
       </BrowserRouter>
