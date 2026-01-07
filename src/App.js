@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Navbar from './components/Navbar';
+import Api from './components/api';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Counter from './components/counter';
+import { useEffect, useState } from 'react';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+
+      {/* Daily Exercises  */}
+    
+      <BrowserRouter> 
+       <Navbar />
+        <Routes>
+          <Route path='/counter' element={<Counter />} />
+          <Route path='/api' element={<Api />} />
+        </Routes>
+      </BrowserRouter>
+
+    </>
   );
 }
 
