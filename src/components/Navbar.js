@@ -26,11 +26,23 @@ function Navbar() {
                 {/* Collapsible Content */}
                 <div className="collapse navbar-collapse" id="mainNavbar">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+                         <li className="nav-item">
+                            <span className="nav-link text-secondary fw-medium"><Link to="/" className="nav-link text-secondary fw-medium">Dynamic Cards</Link></span>
+                        </li>
                         <li className="nav-item">
                             <span className="nav-link text-secondary fw-medium"><Link to="/api" className="nav-link text-secondary fw-medium">API</Link></span>
                         </li>
                         <li className="nav-item">
+                            <span className="nav-link text-secondary fw-medium"><Link to="/formValidation" className="nav-link text-secondary fw-medium">Form Validation</Link></span>
+                        </li>
+                         <li className="nav-item">
                             <span className="nav-link text-secondary fw-medium"><Link to="/counter" className="nav-link text-secondary fw-medium">Counter</Link></span>
+                        </li>
+                          <li className="nav-item">
+                            <span className="nav-link text-secondary fw-medium"><Link to="/customToggle" className="nav-link text-secondary fw-medium">custom Toggle</Link></span>
+                        </li>
+                         <li className="nav-item">
+                            <span className="nav-link text-secondary fw-medium"><Link to="/useRef" className="nav-link text-secondary fw-medium">useRef Counter</Link></span>
                         </li>
                     </ul>
                 </div>

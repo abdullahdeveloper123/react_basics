@@ -94,3 +94,73 @@ body {
   66% {background-size: 20% 100%,20% 100%,20% 10% }
   100%{background-size: 20% 100%,20% 100%,20% 100%}
 }
+
+/* Container */
+.form-wrapper {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+/* Validation message */
+
+
+/* Form */
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-wrapper label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Inputs */
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"] {
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-wrapper input:focus {
+  border-color: #2563eb; /* primary */
+}
+
+/* Submit button */
+.form-wrapper input[type="submit"] {
+  margin-top: 8px;
+  padding: 12px;
+  background-color: #2563eb; /* primary */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.form-wrapper input[type="submit"]:hover {
+  background-color: #1e40af;
+}
+
+.form-wrapper input[type="submit"]:active {
+  transform: scale(0.98);
+}
+.spinner-wrapper{
+  display: flex;
+  justify-content: center;
+}
